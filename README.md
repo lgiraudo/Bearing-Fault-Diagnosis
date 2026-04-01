@@ -7,3 +7,10 @@ https://lgiraudo.github.io/Bearing-Fault-Diagnosis/
 if instead you want to work on another editor you should download the files in the content directory
 
 All things relevant to the lesson and exercise are inside said folder
+
+---
+Copyright things...
+
+This page was built by cloning the https://github.com/jupyterlite/demo repository
+
+All images' references can be found in the ipynb file in the contents directory
