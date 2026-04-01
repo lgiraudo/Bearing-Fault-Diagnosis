@@ -6,9 +6,9 @@
 
 ## Overview
 
-This repository contains educational materials for a hands-on lab on **vibration signal analysis** and **rolling-element bearing fault diagnosis**. Students will learn envelope analysis techniques and classification metrics through two interactive Jupyter notebooks.
+This repository contains educational materials for a hands-on lab on **vibration signal analysis** and **rolling-element bearing fault diagnosis**. Students will learn fault diagnosis and envelope analysis techniques for rolling element bearings.
 
-**Total lab time**: ~1 hour
+**Total lab time**: ~1.3 hours
 
 ---
 
@@ -17,18 +17,14 @@ This repository contains educational materials for a hands-on lab on **vibration
 By completing this lab, you will be able to:
 
 1. **Understand bearing fault mechanisms** and their vibration signatures
-2. **Apply envelope analysis** using the Hilbert transform to detect bearing faults
-3. **Use band-pass filtering** to enhance fault detection in vibration signals
-4. **Compute time-domain features** (RMS, peak, kurtosis) for fault diagnosis
-5. **Understand binary classification** for bearing fault detection (Healthy vs Faulty)
-6. **Interpret classification metrics** (accuracy, precision, recall, F1-score)
-7. **Analyze confusion matrices** to diagnose classifier performance
-8. **Use ROC and Precision-Recall curves** to evaluate diagnostic systems
-9. **Understand the impact of class imbalance** on model evaluation
+2. **Compute time-domain features** (RMS, peak, kurtosis) for fault diagnosis
+3. **Apply envelope analysis** using the Hilbert transform to detect bearing faults
 
 ---
 
 ## Repository Structure
+
+**Inside the content directory you will find**
 
 ```
 .
@@ -108,122 +104,9 @@ Each `.mat` file in the `data/` folder contains a **2-second snippet** of vibrat
 
 ### Quick Start
 
-1. **Install Git** (if not already installed):
-   
-   **Windows**:
-   - Download Git from [git-scm.com](https://git-scm.com/download/win)
-   - Run the installer and follow the setup wizard (default options work fine)
-   - Verify installation: `git --version`
+I recommend using this (link)[https://lgiraudo.github.io/Bearing-Fault-Diagnosis/] to the jupyterlite editor to work on files directly in your browser.
 
-   **macOS**:
-   - Install via Homebrew: `brew install git`
-   - Or download from [git-scm.com](https://git-scm.com/download/mac)
-   - Or install Xcode Command Line Tools: `xcode-select --install`
-
-   **Linux** (Debian/Ubuntu):
-   ```bash
-   sudo apt-get update && sudo apt-get install git
-   ```
-
-   **Linux** (Fedora/RHEL):
-   ```bash
-   sudo dnf install git
-   ```
-
-   After installation, configure your Git identity:
-   ```bash
-   git config --global user.name "Your Name"
-   git config --global user.email "your.email@example.com"
-   ```
-
-2. **Clone the repository**:
-   ```bash
-   git clone https://github.com/LGDiMaggio/bearing-envelope-analysis-lab.git
-   cd bearing-envelope-analysis-lab
-   ```
-
-3. **Create a virtual environment** (recommended):
-   ```bash
-   python -m venv venv
-   ```
-
-4. **Activate the virtual environment**:
-   - Windows:
-     ```bash
-     venv\Scripts\activate
-     ```
-   - macOS/Linux:
-     ```bash
-     source venv/bin/activate
-     ```
-
-5. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-6. **Launch Jupyter**:
-   ```bash
-   jupyter notebook
-   ```
-   or
-   ```bash
-   jupyter lab
-   ```
-
-Then open the notebooks in order:
-1. `Notebook1_BearingEnvelopeAnalysis.ipynb`
-2. `Notebook2_BearingFaultMetrics.ipynb`
-
----
-
-## Notebook Descriptions
-
-### Notebook 1: Envelope Analysis for Bearing Fault Diagnosis
-
-**Topics covered**:
-
-- Loading and visualizing vibration signals from different bearing conditions
-- Computing time-domain features (RMS, peak, **kurtosis**)
-- Understanding the role of kurtosis in detecting impulsive faults
-- Applying **FFT** to analyze frequency content
-- Using the **Hilbert transform** to compute signal envelopes
-- Comparing envelope spectra with and without **band-pass filtering**
-- Conceptual introduction to **spectral kurtosis** and the **kurtogram**
-- Demonstrating envelope analysis with a synthetic amplitude-modulated signal
-
-**Key takeaways**:
-- Kurtosis is a useful indicator of impulsive behavior in bearing faults
-- Envelope analysis reveals fault frequencies more clearly than raw FFT
-- Band-pass filtering enhances fault detection by isolating resonance bands
-
----
-
-### Notebook 2: Classification Metrics for Bearing Fault Diagnosis
-
-**Topics covered**:
-
-- Understanding binary classification for bearing diagnostics (Healthy vs Faulty)
-- Simulating realistic diagnostic scenarios with different error patterns
-- Computing and interpreting classification metrics:
-  - **Accuracy**
-  - **Precision**
-  - **Recall**
-  - **F1-score**
-- Visualizing the **confusion matrix** for binary classification
-- Understanding **decision thresholds** and their impact on performance
-- Plotting **ROC curves** and computing **AUC**
-- Plotting **Precision-Recall curves** and computing **Average Precision**
-- Understanding the impact of **class imbalance** on evaluation metrics
-
-**Key takeaways**:
-- Accuracy alone is misleading, especially with imbalanced datasets
-- Precision and recall provide insight into false positives and false negatives
-- For safety-critical applications, prioritize **recall** (catch all faults)
-- PR curves are more informative than ROC curves for imbalanced problems
-- Always examine the confusion matrix to diagnose system weaknesses
-
-**Note**: This notebook uses **simulated scenarios** to teach metrics concepts, not actual model training. It focuses on understanding how to evaluate diagnostic systems.
+If you prefer to work on a personal editor you should download the files in the content directory
 
 ---
 
