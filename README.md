@@ -4,6 +4,8 @@ from this link you will be able to access a jupyter editor directly from your br
 
 https://lgiraudo.github.io/Bearing-Fault-Diagnosis/
 
+you can work on the files directly from there
+
 if instead you want to work on another editor you should download the files in the content directory
 
 All things relevant to the lesson and exercise are inside said folder
