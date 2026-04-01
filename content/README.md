@@ -98,7 +98,7 @@ Each `.mat` file in the `data/` folder contains a **2-second snippet** of vibrat
 
 ### Quick Start
 
-I recommend using this (link)[https://lgiraudo.github.io/Bearing-Fault-Diagnosis/] to the jupyterlite editor to work on files directly in your browser.
+I recommend using this [link](https://lgiraudo.github.io/Bearing-Fault-Diagnosis/) to the jupyterlite editor to work on files directly in your browser.
 
 If you prefer to work on a personal editor you should download the files in the content directory
 
