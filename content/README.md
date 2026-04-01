@@ -1,4 +1,4 @@
-# Bearing Envelope Analysis Lab
+# Bearing Fault Diagnosis Tutorial
 
 **Educational Project for MSc Engineering Students**
 
@@ -43,12 +43,6 @@ By completing this lab, you will be able to:
 ├── Notebook1_BearingEnvelopeAnalysis.ipynb     # Lab 1: Envelope analysis
 └── Notebook2_BearingFaultMetrics.ipynb         # Lab 2: Classification metrics
 ```
-
----
-
-## Bearing Diagnostics Overview
-
-![Bearing Diagnostics](images/Bearing_diagnostics.png)
 
 ---
 
