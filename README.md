@@ -15,4 +15,4 @@ This page was built by cloning the https://github.com/jupyterlite/demo repositor
 
 All images' references can be found in the ipynb file in the contents directory
 
-The contents and most of the code of this repo is from https://github.com/LGDiMaggio/bearing-envelope-analysis-lab
+The contents and most of the code of this repo are from https://github.com/LGDiMaggio/bearing-envelope-analysis-lab
