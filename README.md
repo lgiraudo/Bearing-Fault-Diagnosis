@@ -8,7 +8,7 @@ you can work on the files directly from there
 
 if instead you want to work on another editor you should download the files in the content directory
 
-All things relevant to the lesson and exercise are inside said folder
+All things relevant to the lesson and exercise are inside said folder (also a way better readme)
 
 ---
 Copyright things...
